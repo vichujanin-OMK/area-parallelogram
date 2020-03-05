@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Маршрут для загрузки формы
-Route::get('/', 'Area-parallelogram.Controller@index')->name('index');
+Route::get('/', 'Area.Controller@index')->name('index');
 //Маршрут для вычисления
-Route::post('/', 'Area-parallelogram.Controller@area2')->name('area2');
+Route::post('/', 'Area.Controller@area2')->name('area2');
 
