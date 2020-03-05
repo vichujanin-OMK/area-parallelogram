@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AreaRequest;
 use Illuminate\Http\Request;
 
 class AreaController extends Controller
@@ -16,7 +17,7 @@ class AreaController extends Controller
         return view('index');
     }
 
-    public function area2(Request $request)
+    public function area2(AreaRequest $request)
     {
         //получение данных
         $height = $request->height;
