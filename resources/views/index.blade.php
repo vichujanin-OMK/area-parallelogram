@@ -13,7 +13,6 @@
         @csrf
         <label for="area2">Height</label>
         <input type="text" name='height' value="{{ $height ?? old('height') }}">
-        <br>
         <label for="area2">Base</label>
         <input type="text" name='footing' value="{{ $footing ?? old('footing') }}">
         <button type="submit">Calculate</button>

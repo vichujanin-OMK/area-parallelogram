@@ -18,12 +18,6 @@ class AreaController extends Controller
 
     public function area2(Request $request)
     {
-        // валидация данных
-        $request->validate([
-            'height' => 'required|numeric|min:0',
-            'footing' => 'required|numeric|min:0'
-        ]);
-
         //получение данных
         $height = $request->height;
         $footing = $request->footing;
