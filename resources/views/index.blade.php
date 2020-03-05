@@ -5,8 +5,8 @@
     <title>Area</title>
 </head>
 <body>
-      {{-- Результат вычисления --}}
-    <p><strong>Result</strong>{{ $area ?? '' }}</p>
+     {{-- Результат вычисления --}}
+    <p><strong>Result :</strong>{{ $area ?? '' }}</p>
 
     {{-- Форма для передачи данных --}}
     <form action="{{ route('area2') }}" method="post">
